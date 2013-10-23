@@ -1,0 +1,29 @@
+
+fr:
+  layouts:
+    application:
+      title:  "étagère pragmatique"
+      home:  "maison"
+      questions:  "Questions"
+      news: "nouvelles"
+      contact:  "contacter"
+
+  store:
+    index:
+      title_html: "Votre catalogue Pragmatique"
+      add_html: "Ajouter au panier"
+      
+  carts:
+    cart:
+      title: "votre panier"
+      empty: "Vider le panier"
+      checkout: "caisse"
+      
+  number:
+    currency:
+      format:
+        unit: "€"
+        precision: 2
+        separator: ","
+        delimiter: "."
+        format: "%n&nbsp;%u"

@@ -1,0 +1,29 @@
+
+ar:
+  layouts:
+    application:
+      title:  "رف كتب عملي"
+      home:  "منزل"
+      questions:  "الأسئلة"
+      news: "أخبار"
+      contact:  "اتصل"
+
+  store:
+    index:
+      title_html: "دليل عملي الخاص"
+      add_html: "إضافة إلى العربة"
+      
+  carts:
+    cart:
+      title: "سلة مشترياتك"
+      empty: "إفراغ سلة"
+      checkout: "الخروج"
+      
+  number:
+    currency:
+      format:
+        unit: "درهم"
+        precision: 2
+        separator: ","
+        delimiter: "."
+        format: "%n&nbsp;%u"
