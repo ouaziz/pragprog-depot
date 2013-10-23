@@ -35,7 +35,7 @@ Depot::Application.configure do
     authentication: "plain",
     user_name:"mouhcine.ouaziz@gmail.com",
     password:"kmDZK2VapDa46FId8AeTPQ",
-    enable_starttls_auto: false
+    enable_starttls_auto: true
   }
 end
 
