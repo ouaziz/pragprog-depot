@@ -17,7 +17,7 @@ ar:
     cart:
       title: "سلة مشترياتك"
       empty: "إفراغ سلة"
-      checkout: "الخروج"
+      checkout: "دفع"
       
   number:
     currency:
@@ -27,3 +27,28 @@ ar:
         separator: ","
         delimiter: "."
         format: "%n&nbsp;%u"
+        
+  orders:
+    new: 
+      legend: "يرجى إدخال التفاصيل الخاصة بك"
+    form:
+      name: "اسم"
+      address_html: "عنوان"
+      email: "البريد الإلكتروني"
+      pay_type: "دفع مع"
+      pay_prompt_html: "تحديد طريقة الدفع"
+      submit: "يقدم طلب شراء"
+      
+  activerecord:
+    errors:
+      messages:
+        inclusion: "لم يتم تضمين في قائمة"
+        blank: "لا يمكن أن تكون فارغة"
+  errors:
+    template:
+      body: "هناك مشاكل مع الحقول التالية"
+      header: "%{count} أخطاء يحظر هذا النظام من يتم حفظها "
+      one: "s"
+      other: "s"
+
+  thanks: "شكرا لطلبك"
