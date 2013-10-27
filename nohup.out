@@ -12773,3 +12773,1078 @@ Started GET "/assets/line_items.js?body=1" for 41.140.229.124 at 2013-10-23 17:3
 
 
 Started GET "/assets/orders.js?body=1" for 41.140.229.124 at 2013-10-23 17:31:54 +0000
+
+
+Started GET "/assets/products.js?body=1" for 41.140.229.124 at 2013-10-23 17:31:54 +0000
+
+
+Started GET "/assets/session.js?body=1" for 41.140.229.124 at 2013-10-23 17:31:54 +0000
+
+
+Started GET "/assets/store.js?body=1" for 41.140.229.124 at 2013-10-23 17:31:54 +0000
+
+
+Started GET "/assets/users.js?body=1" for 41.140.229.124 at 2013-10-23 17:31:54 +0000
+
+
+Started GET "/assets/application.js?body=1" for 41.140.229.124 at 2013-10-23 17:31:54 +0000
+
+
+Started GET "/assets/logo.png" for 41.140.229.124 at 2013-10-23 17:31:54 +0000
+
+
+Started GET "/assets/cs.jpg" for 41.140.229.124 at 2013-10-23 17:31:55 +0000
+
+
+Started GET "/assets/ruby.jpg" for 41.140.229.124 at 2013-10-23 17:31:55 +0000
+
+
+Started GET "/assets/rtp.jpg" for 41.140.229.124 at 2013-10-23 17:31:55 +0000
+
+
+Started POST "/en" for 41.140.229.124 at 2013-10-23 17:31:57 +0000
+Processing by StoreController#index as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5TD6mIUUusZTKhGhlA3qCxPWhC0g+6PGxbLjVJboctQ=", "set_locale"=>"fr", "locale"=>"en"}
+  [1m[36mCart Load (0.2ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1[0m  [["id", 51]]
+Redirected to http://makaveli244-ruby-25166.use1.actionbox.io:3000/fr
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/fr" for 41.140.229.124 at 2013-10-23 17:31:57 +0000
+Processing by StoreController#index as HTML
+  Parameters: {"locale"=>"fr"}
+  [1m[35mCart Load (0.2ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1  [["id", 51]]
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY "products".title ASC[0m
+  Rendered store/index.html.erb within layouts/application (4.3ms)
+  [1m[35mLineItem Exists (0.1ms)[0m  SELECT 1 AS one FROM "line_items" WHERE "line_items"."cart_id" = ? LIMIT 1  [["cart_id", 51]]
+  [1m[36mLineItem Load (0.1ms)[0m  [1mSELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = ?[0m  [["cart_id", 51]]
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? ORDER BY "products"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered line_items/_line_item.html.erb (1.6ms)
+  Rendered carts/_cart.html.erb (4.1ms)
+Completed 200 OK in 23ms (Views: 21.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/line_items.css?body=1" for 41.140.229.124 at 2013-10-23 17:31:58 +0000
+
+
+Started GET "/assets/admin.css?body=1" for 41.140.229.124 at 2013-10-23 17:31:58 +0000
+
+
+Started GET "/assets/orders.css?body=1" for 41.140.229.124 at 2013-10-23 17:31:58 +0000
+
+
+Started GET "/assets/carts.css?body=1" for 41.140.229.124 at 2013-10-23 17:31:58 +0000
+
+
+Started GET "/assets/products.css?body=1" for 41.140.229.124 at 2013-10-23 17:31:58 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 41.140.229.124 at 2013-10-23 17:31:58 +0000
+
+
+Started GET "/assets/session.css?body=1" for 41.140.229.124 at 2013-10-23 17:31:58 +0000
+
+
+Started GET "/assets/store.css?body=1" for 41.140.229.124 at 2013-10-23 17:31:58 +0000
+
+
+Started GET "/assets/users.css?body=1" for 41.140.229.124 at 2013-10-23 17:31:58 +0000
+
+
+Started GET "/assets/admin.js?body=1" for 41.140.229.124 at 2013-10-23 17:31:58 +0000
+
+
+Started GET "/assets/carts.js?body=1" for 41.140.229.124 at 2013-10-23 17:31:58 +0000
+
+
+Started GET "/assets/line_items.js?body=1" for 41.140.229.124 at 2013-10-23 17:31:58 +0000
+
+
+Started GET "/assets/orders.js?body=1" for 41.140.229.124 at 2013-10-23 17:31:58 +0000
+
+
+Started GET "/assets/products.js?body=1" for 41.140.229.124 at 2013-10-23 17:32:00 +0000
+
+
+Started GET "/assets/session.js?body=1" for 41.140.229.124 at 2013-10-23 17:32:00 +0000
+
+
+Started GET "/assets/store.js?body=1" for 41.140.229.124 at 2013-10-23 17:32:00 +0000
+
+
+Started GET "/assets/users.js?body=1" for 41.140.229.124 at 2013-10-23 17:32:00 +0000
+
+
+Started GET "/assets/application.js?body=1" for 41.140.229.124 at 2013-10-23 17:32:00 +0000
+
+
+Started GET "/assets/cs.jpg" for 41.140.229.124 at 2013-10-23 17:32:01 +0000
+
+
+Started GET "/assets/logo.png" for 41.140.229.124 at 2013-10-23 17:32:01 +0000
+
+
+Started GET "/assets/ruby.jpg" for 41.140.229.124 at 2013-10-23 17:32:01 +0000
+
+
+Started GET "/assets/rtp.jpg" for 41.140.229.124 at 2013-10-23 17:32:01 +0000
+
+
+Started GET "/orders/new" for 41.140.229.124 at 2013-10-23 17:32:03 +0000
+Processing by OrdersController#new as HTML
+  [1m[36mCart Load (0.2ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1[0m  [["id", 51]]
+  [1m[35mLineItem Exists (0.2ms)[0m  SELECT 1 AS one FROM "line_items" WHERE "line_items"."cart_id" = ? LIMIT 1  [["cart_id", 51]]
+  Rendered orders/_form.html.erb (3.1ms)
+  Rendered orders/new.html.erb within layouts/application (11.7ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT 1 AS one FROM "line_items" WHERE "line_items"."cart_id" = ? LIMIT 1[0m  [["cart_id", 51]]
+  [1m[35mLineItem Load (0.2ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = ?  [["cart_id", 51]]
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? ORDER BY "products"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered line_items/_line_item.html.erb (1.8ms)
+  Rendered carts/_cart.html.erb (4.4ms)
+Completed 200 OK in 53ms (Views: 49.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/admin.css?body=1" for 41.140.229.124 at 2013-10-23 17:32:04 +0000
+
+
+Started GET "/assets/carts.css?body=1" for 41.140.229.124 at 2013-10-23 17:32:04 +0000
+
+
+Started GET "/assets/line_items.css?body=1" for 41.140.229.124 at 2013-10-23 17:32:04 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 41.140.229.124 at 2013-10-23 17:32:04 +0000
+
+
+Started GET "/assets/orders.css?body=1" for 41.140.229.124 at 2013-10-23 17:32:04 +0000
+
+
+Started GET "/assets/products.css?body=1" for 41.140.229.124 at 2013-10-23 17:32:04 +0000
+
+
+Started GET "/assets/session.css?body=1" for 41.140.229.124 at 2013-10-23 17:32:04 +0000
+
+
+Started GET "/assets/store.css?body=1" for 41.140.229.124 at 2013-10-23 17:32:04 +0000
+
+
+Started GET "/assets/users.css?body=1" for 41.140.229.124 at 2013-10-23 17:32:04 +0000
+
+
+Started GET "/assets/admin.js?body=1" for 41.140.229.124 at 2013-10-23 17:32:04 +0000
+
+
+Started GET "/assets/carts.js?body=1" for 41.140.229.124 at 2013-10-23 17:32:04 +0000
+
+
+Started GET "/assets/line_items.js?body=1" for 41.140.229.124 at 2013-10-23 17:32:04 +0000
+
+
+Started GET "/assets/orders.js?body=1" for 41.140.229.124 at 2013-10-23 17:32:04 +0000
+
+
+Started GET "/assets/products.js?body=1" for 41.140.229.124 at 2013-10-23 17:32:04 +0000
+
+
+Started GET "/assets/store.js?body=1" for 41.140.229.124 at 2013-10-23 17:32:04 +0000
+
+
+Started GET "/assets/users.js?body=1" for 41.140.229.124 at 2013-10-23 17:32:04 +0000
+
+
+Started GET "/assets/session.js?body=1" for 41.140.229.124 at 2013-10-23 17:32:04 +0000
+
+
+Started GET "/assets/application.js?body=1" for 41.140.229.124 at 2013-10-23 17:32:05 +0000
+
+
+Started GET "/assets/logo.png" for 41.140.229.124 at 2013-10-23 17:32:05 +0000
+
+
+Started POST "/en" for 41.140.229.124 at 2013-10-23 17:33:15 +0000
+Processing by StoreController#index as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5TD6mIUUusZTKhGhlA3qCxPWhC0g+6PGxbLjVJboctQ=", "set_locale"=>"fr", "locale"=>"en"}
+  [1m[35mCart Load (0.2ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1  [["id", 51]]
+Redirected to http://makaveli244-ruby-25166.use1.actionbox.io:3000/fr
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/fr" for 41.140.229.124 at 2013-10-23 17:33:15 +0000
+Processing by StoreController#index as HTML
+  Parameters: {"locale"=>"fr"}
+  [1m[36mCart Load (0.1ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1[0m  [["id", 51]]
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" ORDER BY "products".title ASC
+  Rendered store/index.html.erb within layouts/application (4.0ms)
+  [1m[36mLineItem Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "line_items" WHERE "line_items"."cart_id" = ? LIMIT 1[0m  [["cart_id", 51]]
+  [1m[35mLineItem Load (0.1ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = ?  [["cart_id", 51]]
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? ORDER BY "products"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered line_items/_line_item.html.erb (1.6ms)
+  Rendered carts/_cart.html.erb (4.0ms)
+Completed 200 OK in 23ms (Views: 20.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 41.140.229.124 at 2013-10-23 17:33:16 +0000
+
+
+Started GET "/assets/admin.css?body=1" for 41.140.229.124 at 2013-10-23 17:33:16 +0000
+
+
+Started GET "/assets/carts.css?body=1" for 41.140.229.124 at 2013-10-23 17:33:16 +0000
+
+
+Started GET "/assets/line_items.css?body=1" for 41.140.229.124 at 2013-10-23 17:33:16 +0000
+
+
+Started GET "/assets/orders.css?body=1" for 41.140.229.124 at 2013-10-23 17:33:16 +0000
+
+
+Started GET "/assets/products.css?body=1" for 41.140.229.124 at 2013-10-23 17:33:16 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 41.140.229.124 at 2013-10-23 17:33:16 +0000
+
+
+Started GET "/assets/session.css?body=1" for 41.140.229.124 at 2013-10-23 17:33:16 +0000
+
+
+Started GET "/assets/store.css?body=1" for 41.140.229.124 at 2013-10-23 17:33:16 +0000
+
+
+Started GET "/assets/users.css?body=1" for 41.140.229.124 at 2013-10-23 17:33:16 +0000
+
+
+Started GET "/assets/admin.js?body=1" for 41.140.229.124 at 2013-10-23 17:33:16 +0000
+
+
+Started GET "/assets/carts.js?body=1" for 41.140.229.124 at 2013-10-23 17:33:16 +0000
+
+
+Started GET "/assets/line_items.js?body=1" for 41.140.229.124 at 2013-10-23 17:33:16 +0000
+
+
+Started GET "/assets/orders.js?body=1" for 41.140.229.124 at 2013-10-23 17:33:16 +0000
+
+
+Started GET "/assets/products.js?body=1" for 41.140.229.124 at 2013-10-23 17:33:16 +0000
+
+
+Started GET "/assets/users.js?body=1" for 41.140.229.124 at 2013-10-23 17:33:17 +0000
+
+
+Started GET "/assets/store.js?body=1" for 41.140.229.124 at 2013-10-23 17:33:17 +0000
+
+
+Started GET "/assets/session.js?body=1" for 41.140.229.124 at 2013-10-23 17:33:17 +0000
+
+
+Started GET "/assets/application.js?body=1" for 41.140.229.124 at 2013-10-23 17:33:17 +0000
+
+
+Started GET "/assets/logo.png" for 41.140.229.124 at 2013-10-23 17:33:17 +0000
+
+
+Started GET "/assets/cs.jpg" for 41.140.229.124 at 2013-10-23 17:33:17 +0000
+
+
+Started GET "/assets/ruby.jpg" for 41.140.229.124 at 2013-10-23 17:33:17 +0000
+
+
+Started GET "/assets/rtp.jpg" for 41.140.229.124 at 2013-10-23 17:33:17 +0000
+
+
+Started GET "/orders/new" for 41.140.229.124 at 2013-10-23 17:33:28 +0000
+Processing by OrdersController#new as HTML
+  [1m[35mCart Load (0.2ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1  [["id", 51]]
+  [1m[36mLineItem Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "line_items" WHERE "line_items"."cart_id" = ? LIMIT 1[0m  [["cart_id", 51]]
+  Rendered orders/_form.html.erb (2.5ms)
+  Rendered orders/new.html.erb within layouts/application (9.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT 1 AS one FROM "line_items" WHERE "line_items"."cart_id" = ? LIMIT 1  [["cart_id", 51]]
+  [1m[36mLineItem Load (0.2ms)[0m  [1mSELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = ?[0m  [["cart_id", 51]]
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? ORDER BY "products"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered line_items/_line_item.html.erb (1.7ms)
+  Rendered carts/_cart.html.erb (4.2ms)
+Completed 200 OK in 29ms (Views: 26.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/admin.css?body=1" for 41.140.229.124 at 2013-10-23 17:33:28 +0000
+
+
+Started GET "/assets/carts.css?body=1" for 41.140.229.124 at 2013-10-23 17:33:29 +0000
+
+
+Started GET "/assets/line_items.css?body=1" for 41.140.229.124 at 2013-10-23 17:33:29 +0000
+
+
+Started GET "/assets/orders.css?body=1" for 41.140.229.124 at 2013-10-23 17:33:29 +0000
+
+
+Started GET "/assets/products.css?body=1" for 41.140.229.124 at 2013-10-23 17:33:29 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 41.140.229.124 at 2013-10-23 17:33:29 +0000
+
+
+Started GET "/assets/session.css?body=1" for 41.140.229.124 at 2013-10-23 17:33:29 +0000
+
+
+Started GET "/assets/store.css?body=1" for 41.140.229.124 at 2013-10-23 17:33:29 +0000
+
+
+Started GET "/assets/users.css?body=1" for 41.140.229.124 at 2013-10-23 17:33:29 +0000
+
+
+Started GET "/assets/admin.js?body=1" for 41.140.229.124 at 2013-10-23 17:33:29 +0000
+
+
+Started GET "/assets/carts.js?body=1" for 41.140.229.124 at 2013-10-23 17:33:29 +0000
+
+
+Started GET "/assets/line_items.js?body=1" for 41.140.229.124 at 2013-10-23 17:33:29 +0000
+
+
+Started GET "/assets/orders.js?body=1" for 41.140.229.124 at 2013-10-23 17:33:29 +0000
+
+
+Started GET "/assets/products.js?body=1" for 41.140.229.124 at 2013-10-23 17:33:29 +0000
+
+
+Started GET "/assets/session.js?body=1" for 41.140.229.124 at 2013-10-23 17:33:29 +0000
+
+
+Started GET "/assets/store.js?body=1" for 41.140.229.124 at 2013-10-23 17:33:29 +0000
+
+
+Started GET "/assets/users.js?body=1" for 41.140.229.124 at 2013-10-23 17:33:29 +0000
+
+
+Started GET "/assets/application.js?body=1" for 41.140.229.124 at 2013-10-23 17:33:29 +0000
+
+
+Started GET "/assets/logo.png" for 41.140.229.124 at 2013-10-23 17:33:29 +0000
+
+
+Started POST "/en" for 41.140.229.124 at 2013-10-23 17:33:32 +0000
+Processing by StoreController#index as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5TD6mIUUusZTKhGhlA3qCxPWhC0g+6PGxbLjVJboctQ=", "set_locale"=>"fr", "locale"=>"en"}
+  [1m[36mCart Load (0.2ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1[0m  [["id", 51]]
+Redirected to http://makaveli244-ruby-25166.use1.actionbox.io:3000/fr
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/fr" for 41.140.229.124 at 2013-10-23 17:33:34 +0000
+Processing by StoreController#index as HTML
+  Parameters: {"locale"=>"fr"}
+  [1m[35mCart Load (0.2ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1  [["id", 51]]
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY "products".title ASC[0m
+  Rendered store/index.html.erb within layouts/application (39.0ms)
+  [1m[35mLineItem Exists (0.1ms)[0m  SELECT 1 AS one FROM "line_items" WHERE "line_items"."cart_id" = ? LIMIT 1  [["cart_id", 51]]
+  [1m[36mLineItem Load (0.2ms)[0m  [1mSELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = ?[0m  [["cart_id", 51]]
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? ORDER BY "products"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered line_items/_line_item.html.erb (1.6ms)
+  Rendered carts/_cart.html.erb (4.0ms)
+Completed 200 OK in 58ms (Views: 55.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/admin.css?body=1" for 41.140.229.124 at 2013-10-23 17:33:34 +0000
+
+
+Started GET "/assets/carts.css?body=1" for 41.140.229.124 at 2013-10-23 17:33:34 +0000
+
+
+Started GET "/assets/line_items.css?body=1" for 41.140.229.124 at 2013-10-23 17:33:34 +0000
+
+
+Started GET "/assets/orders.css?body=1" for 41.140.229.124 at 2013-10-23 17:33:34 +0000
+
+
+Started GET "/assets/products.css?body=1" for 41.140.229.124 at 2013-10-23 17:33:34 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 41.140.229.124 at 2013-10-23 17:33:34 +0000
+
+
+Started GET "/assets/session.css?body=1" for 41.140.229.124 at 2013-10-23 17:33:34 +0000
+
+
+Started GET "/assets/store.css?body=1" for 41.140.229.124 at 2013-10-23 17:33:34 +0000
+
+
+Started GET "/assets/users.css?body=1" for 41.140.229.124 at 2013-10-23 17:33:34 +0000
+
+
+Started GET "/assets/admin.js?body=1" for 41.140.229.124 at 2013-10-23 17:33:34 +0000
+
+
+Started GET "/assets/carts.js?body=1" for 41.140.229.124 at 2013-10-23 17:33:34 +0000
+
+
+Started GET "/assets/line_items.js?body=1" for 41.140.229.124 at 2013-10-23 17:33:34 +0000
+
+
+Started GET "/assets/orders.js?body=1" for 41.140.229.124 at 2013-10-23 17:33:34 +0000
+
+
+Started GET "/assets/products.js?body=1" for 41.140.229.124 at 2013-10-23 17:33:34 +0000
+
+
+Started GET "/assets/session.js?body=1" for 41.140.229.124 at 2013-10-23 17:33:34 +0000
+
+
+Started GET "/assets/store.js?body=1" for 41.140.229.124 at 2013-10-23 17:33:35 +0000
+
+
+Started GET "/assets/users.js?body=1" for 41.140.229.124 at 2013-10-23 17:33:35 +0000
+
+
+Started GET "/assets/application.js?body=1" for 41.140.229.124 at 2013-10-23 17:33:35 +0000
+
+
+Started GET "/assets/logo.png" for 41.140.229.124 at 2013-10-23 17:33:35 +0000
+
+
+Started GET "/assets/cs.jpg" for 41.140.229.124 at 2013-10-23 17:33:35 +0000
+
+
+Started GET "/assets/ruby.jpg" for 41.140.229.124 at 2013-10-23 17:33:35 +0000
+
+
+Started GET "/assets/rtp.jpg" for 41.140.229.124 at 2013-10-23 17:33:35 +0000
+
+
+Started POST "/fr" for 41.140.229.124 at 2013-10-23 17:33:39 +0000
+Processing by StoreController#index as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5TD6mIUUusZTKhGhlA3qCxPWhC0g+6PGxbLjVJboctQ=", "set_locale"=>"ar", "locale"=>"fr"}
+  [1m[36mCart Load (0.2ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1[0m  [["id", 51]]
+Redirected to http://makaveli244-ruby-25166.use1.actionbox.io:3000/ar
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/ar" for 41.140.229.124 at 2013-10-23 17:33:41 +0000
+Processing by StoreController#index as HTML
+  Parameters: {"locale"=>"ar"}
+  [1m[35mCart Load (8.6ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1  [["id", 51]]
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY "products".title ASC[0m
+  Rendered store/index.html.erb within layouts/application (4.2ms)
+  [1m[35mLineItem Exists (0.1ms)[0m  SELECT 1 AS one FROM "line_items" WHERE "line_items"."cart_id" = ? LIMIT 1  [["cart_id", 51]]
+  [1m[36mLineItem Load (0.1ms)[0m  [1mSELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = ?[0m  [["cart_id", 51]]
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? ORDER BY "products"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered line_items/_line_item.html.erb (1.7ms)
+  Rendered carts/_cart.html.erb (9.4ms)
+Completed 200 OK in 54ms (Views: 37.9ms | ActiveRecord: 9.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 41.140.229.124 at 2013-10-23 17:33:41 +0000
+
+
+Started GET "/assets/admin.css?body=1" for 41.140.229.124 at 2013-10-23 17:33:41 +0000
+
+
+Started GET "/assets/carts.css?body=1" for 41.140.229.124 at 2013-10-23 17:33:41 +0000
+
+
+Started GET "/assets/line_items.css?body=1" for 41.140.229.124 at 2013-10-23 17:33:41 +0000
+
+
+Started GET "/assets/orders.css?body=1" for 41.140.229.124 at 2013-10-23 17:33:41 +0000
+
+
+Started GET "/assets/products.css?body=1" for 41.140.229.124 at 2013-10-23 17:33:42 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 41.140.229.124 at 2013-10-23 17:33:42 +0000
+
+
+Started GET "/assets/session.css?body=1" for 41.140.229.124 at 2013-10-23 17:33:42 +0000
+
+
+Started GET "/assets/store.css?body=1" for 41.140.229.124 at 2013-10-23 17:33:42 +0000
+
+
+Started GET "/assets/users.css?body=1" for 41.140.229.124 at 2013-10-23 17:33:42 +0000
+
+
+Started GET "/assets/admin.js?body=1" for 41.140.229.124 at 2013-10-23 17:33:42 +0000
+
+
+Started GET "/assets/carts.js?body=1" for 41.140.229.124 at 2013-10-23 17:33:42 +0000
+
+
+Started GET "/assets/line_items.js?body=1" for 41.140.229.124 at 2013-10-23 17:33:42 +0000
+
+
+Started GET "/assets/orders.js?body=1" for 41.140.229.124 at 2013-10-23 17:33:42 +0000
+
+
+Started GET "/assets/products.js?body=1" for 41.140.229.124 at 2013-10-23 17:33:42 +0000
+
+
+Started GET "/assets/session.js?body=1" for 41.140.229.124 at 2013-10-23 17:33:42 +0000
+
+
+Started GET "/assets/store.js?body=1" for 41.140.229.124 at 2013-10-23 17:33:42 +0000
+
+
+Started GET "/assets/users.js?body=1" for 41.140.229.124 at 2013-10-23 17:33:42 +0000
+
+
+Started GET "/assets/application.js?body=1" for 41.140.229.124 at 2013-10-23 17:33:42 +0000
+
+
+Started GET "/assets/logo.png" for 41.140.229.124 at 2013-10-23 17:33:42 +0000
+
+
+Started GET "/assets/cs.jpg" for 41.140.229.124 at 2013-10-23 17:33:42 +0000
+
+
+Started GET "/assets/ruby.jpg" for 41.140.229.124 at 2013-10-23 17:33:42 +0000
+
+
+Started GET "/assets/rtp.jpg" for 41.140.229.124 at 2013-10-23 17:33:42 +0000
+
+
+Started GET "/orders/new" for 41.140.229.124 at 2013-10-23 17:33:46 +0000
+Processing by OrdersController#new as HTML
+  [1m[36mCart Load (0.2ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1[0m  [["id", 51]]
+  [1m[35mLineItem Exists (0.1ms)[0m  SELECT 1 AS one FROM "line_items" WHERE "line_items"."cart_id" = ? LIMIT 1  [["cart_id", 51]]
+  Rendered orders/_form.html.erb (2.1ms)
+  Rendered orders/new.html.erb within layouts/application (2.9ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT 1 AS one FROM "line_items" WHERE "line_items"."cart_id" = ? LIMIT 1[0m  [["cart_id", 51]]
+  [1m[35mLineItem Load (0.1ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = ?  [["cart_id", 51]]
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? ORDER BY "products"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered line_items/_line_item.html.erb (1.6ms)
+  Rendered carts/_cart.html.erb (4.0ms)
+Completed 200 OK in 22ms (Views: 18.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/admin.css?body=1" for 41.140.229.124 at 2013-10-23 17:33:46 +0000
+
+
+Started GET "/assets/carts.css?body=1" for 41.140.229.124 at 2013-10-23 17:33:46 +0000
+
+
+Started GET "/assets/line_items.css?body=1" for 41.140.229.124 at 2013-10-23 17:33:46 +0000
+
+
+Started GET "/assets/orders.css?body=1" for 41.140.229.124 at 2013-10-23 17:33:46 +0000
+
+
+Started GET "/assets/products.css?body=1" for 41.140.229.124 at 2013-10-23 17:33:46 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 41.140.229.124 at 2013-10-23 17:33:46 +0000
+
+
+Started GET "/assets/session.css?body=1" for 41.140.229.124 at 2013-10-23 17:33:46 +0000
+
+
+Started GET "/assets/store.css?body=1" for 41.140.229.124 at 2013-10-23 17:33:46 +0000
+
+
+Started GET "/assets/users.css?body=1" for 41.140.229.124 at 2013-10-23 17:33:46 +0000
+
+
+Started GET "/assets/admin.js?body=1" for 41.140.229.124 at 2013-10-23 17:33:46 +0000
+
+
+Started GET "/assets/carts.js?body=1" for 41.140.229.124 at 2013-10-23 17:33:46 +0000
+
+
+Started GET "/assets/line_items.js?body=1" for 41.140.229.124 at 2013-10-23 17:33:46 +0000
+
+
+Started GET "/assets/orders.js?body=1" for 41.140.229.124 at 2013-10-23 17:33:46 +0000
+
+
+Started GET "/assets/products.js?body=1" for 41.140.229.124 at 2013-10-23 17:33:47 +0000
+
+
+Started GET "/assets/session.js?body=1" for 41.140.229.124 at 2013-10-23 17:33:47 +0000
+
+
+Started GET "/assets/store.js?body=1" for 41.140.229.124 at 2013-10-23 17:33:47 +0000
+
+
+Started GET "/assets/users.js?body=1" for 41.140.229.124 at 2013-10-23 17:33:47 +0000
+
+
+Started GET "/assets/application.js?body=1" for 41.140.229.124 at 2013-10-23 17:33:47 +0000
+
+
+Started GET "/assets/logo.png" for 41.140.229.124 at 2013-10-23 17:33:47 +0000
+
+
+Started POST "/en" for 41.140.229.124 at 2013-10-23 17:34:19 +0000
+Processing by StoreController#index as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5TD6mIUUusZTKhGhlA3qCxPWhC0g+6PGxbLjVJboctQ=", "set_locale"=>"es", "locale"=>"en"}
+  [1m[35mCart Load (0.2ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1  [["id", 51]]
+Redirected to http://makaveli244-ruby-25166.use1.actionbox.io:3000/es
+Completed 500 Internal Server Error in 16ms
+
+NoMethodError (undefined method `nil' for "es":String):
+  app/controllers/store_controller.rb:9:in `index'
+
+
+  Rendered /home/action/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /home/action/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /home/action/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/action/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.9ms)
+
+
+Started POST "/en" for 41.140.229.124 at 2013-10-23 17:34:31 +0000
+Processing by StoreController#index as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5TD6mIUUusZTKhGhlA3qCxPWhC0g+6PGxbLjVJboctQ=", "set_locale"=>"es", "locale"=>"en"}
+  [1m[36mCart Load (0.2ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1[0m  [["id", 51]]
+Redirected to http://makaveli244-ruby-25166.use1.actionbox.io:3000/es
+Completed 302 Found in 63ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/es" for 41.140.229.124 at 2013-10-23 17:34:32 +0000
+Processing by StoreController#index as HTML
+  Parameters: {"locale"=>"es"}
+  [1m[35mCart Load (0.2ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1  [["id", 51]]
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY "products".title ASC[0m
+  Rendered store/index.html.erb within layouts/application (24.0ms)
+  [1m[35mLineItem Exists (0.3ms)[0m  SELECT 1 AS one FROM "line_items" WHERE "line_items"."cart_id" = ? LIMIT 1  [["cart_id", 51]]
+  [1m[36mLineItem Load (0.2ms)[0m  [1mSELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = ?[0m  [["cart_id", 51]]
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? ORDER BY "products"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered line_items/_line_item.html.erb (3.6ms)
+  Rendered carts/_cart.html.erb (40.9ms)
+Completed 200 OK in 91ms (Views: 82.6ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/carts.css?body=1" for 41.140.229.124 at 2013-10-23 17:34:33 +0000
+
+
+Started GET "/assets/line_items.css?body=1" for 41.140.229.124 at 2013-10-23 17:34:33 +0000
+
+
+Started GET "/assets/orders.css?body=1" for 41.140.229.124 at 2013-10-23 17:34:33 +0000
+
+
+Started GET "/assets/products.css?body=1" for 41.140.229.124 at 2013-10-23 17:34:33 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 41.140.229.124 at 2013-10-23 17:34:33 +0000
+
+
+Started GET "/assets/session.css?body=1" for 41.140.229.124 at 2013-10-23 17:34:33 +0000
+
+
+Started GET "/assets/store.css?body=1" for 41.140.229.124 at 2013-10-23 17:34:33 +0000
+
+
+Started GET "/assets/users.css?body=1" for 41.140.229.124 at 2013-10-23 17:34:33 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 41.140.229.124 at 2013-10-23 17:34:33 +0000
+
+
+Started GET "/assets/jquery.ui.effect.js?body=1" for 41.140.229.124 at 2013-10-23 17:34:33 +0000
+
+
+Started GET "/assets/jquery.ui.effect-blind.js?body=1" for 41.140.229.124 at 2013-10-23 17:34:34 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 41.140.229.124 at 2013-10-23 17:34:34 +0000
+
+
+Started GET "/assets/admin.js?body=1" for 41.140.229.124 at 2013-10-23 17:34:34 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 41.140.229.124 at 2013-10-23 17:34:34 +0000
+
+
+Started GET "/assets/application.css?body=1" for 41.140.229.124 at 2013-10-23 17:34:34 +0000
+
+
+Started GET "/assets/admin.css?body=1" for 41.140.229.124 at 2013-10-23 17:34:34 +0000
+
+
+Started GET "/assets/line_items.js?body=1" for 41.140.229.124 at 2013-10-23 17:34:34 +0000
+
+
+Started GET "/assets/carts.js?body=1" for 41.140.229.124 at 2013-10-23 17:34:34 +0000
+
+
+Started GET "/assets/orders.js?body=1" for 41.140.229.124 at 2013-10-23 17:34:34 +0000
+
+
+Started GET "/assets/products.js?body=1" for 41.140.229.124 at 2013-10-23 17:34:34 +0000
+
+
+Started GET "/assets/session.js?body=1" for 41.140.229.124 at 2013-10-23 17:34:34 +0000
+
+
+Started GET "/assets/store.js?body=1" for 41.140.229.124 at 2013-10-23 17:34:34 +0000
+
+
+Started GET "/assets/users.js?body=1" for 41.140.229.124 at 2013-10-23 17:34:34 +0000
+
+
+Started GET "/assets/application.js?body=1" for 41.140.229.124 at 2013-10-23 17:34:34 +0000
+
+
+Started GET "/assets/logo.png" for 41.140.229.124 at 2013-10-23 17:34:35 +0000
+
+
+Started GET "/assets/cs.jpg" for 41.140.229.124 at 2013-10-23 17:34:35 +0000
+
+
+Started GET "/assets/ruby.jpg" for 41.140.229.124 at 2013-10-23 17:34:35 +0000
+
+
+Started GET "/assets/rtp.jpg" for 41.140.229.124 at 2013-10-23 17:34:35 +0000
+
+
+Started POST "/es" for 41.140.229.124 at 2013-10-23 17:34:38 +0000
+Processing by StoreController#index as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5TD6mIUUusZTKhGhlA3qCxPWhC0g+6PGxbLjVJboctQ=", "set_locale"=>"ar", "locale"=>"es"}
+  [1m[36mCart Load (0.2ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1[0m  [["id", 51]]
+Redirected to http://makaveli244-ruby-25166.use1.actionbox.io:3000/ar
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/ar" for 41.140.229.124 at 2013-10-23 17:34:38 +0000
+Processing by StoreController#index as HTML
+  Parameters: {"locale"=>"ar"}
+  [1m[35mCart Load (0.2ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1  [["id", 51]]
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY "products".title ASC[0m
+  Rendered store/index.html.erb within layouts/application (4.2ms)
+  [1m[35mLineItem Exists (0.1ms)[0m  SELECT 1 AS one FROM "line_items" WHERE "line_items"."cart_id" = ? LIMIT 1  [["cart_id", 51]]
+  [1m[36mLineItem Load (0.1ms)[0m  [1mSELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = ?[0m  [["cart_id", 51]]
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? ORDER BY "products"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered line_items/_line_item.html.erb (1.6ms)
+  Rendered carts/_cart.html.erb (4.0ms)
+Completed 200 OK in 23ms (Views: 21.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/admin.css?body=1" for 41.140.229.124 at 2013-10-23 17:34:38 +0000
+
+
+Started GET "/assets/orders.css?body=1" for 41.140.229.124 at 2013-10-23 17:34:38 +0000
+
+
+Started GET "/assets/carts.css?body=1" for 41.140.229.124 at 2013-10-23 17:34:38 +0000
+
+
+Started GET "/assets/products.css?body=1" for 41.140.229.124 at 2013-10-23 17:34:38 +0000
+
+
+Started GET "/assets/line_items.css?body=1" for 41.140.229.124 at 2013-10-23 17:34:38 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 41.140.229.124 at 2013-10-23 17:34:38 +0000
+
+
+Started GET "/assets/users.css?body=1" for 41.140.229.124 at 2013-10-23 17:34:39 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 41.140.229.124 at 2013-10-23 17:34:39 +0000
+
+
+Started GET "/assets/session.css?body=1" for 41.140.229.124 at 2013-10-23 17:34:39 +0000
+
+
+Started GET "/assets/store.css?body=1" for 41.140.229.124 at 2013-10-23 17:34:39 +0000
+
+
+Started GET "/assets/jquery.ui.effect.js?body=1" for 41.140.229.124 at 2013-10-23 17:34:39 +0000
+
+
+Started GET "/assets/jquery.ui.effect-blind.js?body=1" for 41.140.229.124 at 2013-10-23 17:34:39 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 41.140.229.124 at 2013-10-23 17:34:39 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 41.140.229.124 at 2013-10-23 17:34:39 +0000
+
+
+Started GET "/assets/admin.js?body=1" for 41.140.229.124 at 2013-10-23 17:34:39 +0000
+
+
+Started GET "/assets/carts.js?body=1" for 41.140.229.124 at 2013-10-23 17:34:39 +0000
+
+
+Started GET "/assets/line_items.js?body=1" for 41.140.229.124 at 2013-10-23 17:34:39 +0000
+
+
+Started GET "/assets/orders.js?body=1" for 41.140.229.124 at 2013-10-23 17:34:39 +0000
+
+
+Started GET "/assets/session.js?body=1" for 41.140.229.124 at 2013-10-23 17:34:39 +0000
+
+
+Started GET "/assets/store.js?body=1" for 41.140.229.124 at 2013-10-23 17:34:39 +0000
+
+
+Started GET "/assets/products.js?body=1" for 41.140.229.124 at 2013-10-23 17:34:39 +0000
+
+
+Started GET "/assets/users.js?body=1" for 41.140.229.124 at 2013-10-23 17:34:39 +0000
+
+
+Started GET "/assets/application.js?body=1" for 41.140.229.124 at 2013-10-23 17:34:39 +0000
+
+
+Started GET "/assets/logo.png" for 41.140.229.124 at 2013-10-23 17:34:40 +0000
+
+
+Started GET "/assets/cs.jpg" for 41.140.229.124 at 2013-10-23 17:34:40 +0000
+
+
+Started GET "/assets/ruby.jpg" for 41.140.229.124 at 2013-10-23 17:34:40 +0000
+
+
+Started GET "/assets/rtp.jpg" for 41.140.229.124 at 2013-10-23 17:34:40 +0000
+
+
+Started GET "/orders/new" for 41.140.229.124 at 2013-10-23 17:34:51 +0000
+Processing by OrdersController#new as HTML
+  [1m[36mCart Load (0.2ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1[0m  [["id", 51]]
+  [1m[35mLineItem Exists (0.1ms)[0m  SELECT 1 AS one FROM "line_items" WHERE "line_items"."cart_id" = ? LIMIT 1  [["cart_id", 51]]
+  Rendered orders/_form.html.erb (24.8ms)
+  Rendered orders/new.html.erb within layouts/application (25.8ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT 1 AS one FROM "line_items" WHERE "line_items"."cart_id" = ? LIMIT 1[0m  [["cart_id", 51]]
+  [1m[35mLineItem Load (0.2ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = ?  [["cart_id", 51]]
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? ORDER BY "products"."id" ASC LIMIT 1[0m  [["id", 1]]
+A server is already running. Check /home/action/workspace/depot/tmp/pids/server.pid.
+=> Booting WEBrick
+=> Rails 4.0.0 application starting in development on http://0.0.0.0:3000
+=> Run `rails server -h` for more startup options
+=> Ctrl-C to shutdown server
+Exiting
+  Rendered line_items/_line_item.html.erb (2.0ms)
+  Rendered carts/_cart.html.erb (4.6ms)
+Completed 200 OK in 53ms (Views: 44.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/admin.css?body=1" for 41.140.229.124 at 2013-10-23 17:34:51 +0000
+
+
+Started GET "/assets/orders.css?body=1" for 41.140.229.124 at 2013-10-23 17:34:51 +0000
+
+
+Started GET "/assets/carts.css?body=1" for 41.140.229.124 at 2013-10-23 17:34:52 +0000
+
+
+Started GET "/assets/store.css?body=1" for 41.140.229.124 at 2013-10-23 17:34:52 +0000
+
+
+Started GET "/assets/line_items.css?body=1" for 41.140.229.124 at 2013-10-23 17:34:52 +0000
+
+
+Started GET "/assets/products.css?body=1" for 41.140.229.124 at 2013-10-23 17:34:52 +0000
+
+
+Started GET "/assets/session.css?body=1" for 41.140.229.124 at 2013-10-23 17:34:52 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 41.140.229.124 at 2013-10-23 17:34:52 +0000
+
+
+Started GET "/assets/users.css?body=1" for 41.140.229.124 at 2013-10-23 17:34:52 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 41.140.229.124 at 2013-10-23 17:34:52 +0000
+
+
+Started GET "/assets/jquery.ui.effect.js?body=1" for 41.140.229.124 at 2013-10-23 17:34:52 +0000
+
+
+Started GET "/assets/jquery.ui.effect-blind.js?body=1" for 41.140.229.124 at 2013-10-23 17:34:52 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 41.140.229.124 at 2013-10-23 17:34:52 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 41.140.229.124 at 2013-10-23 17:34:52 +0000
+
+
+Started GET "/assets/admin.js?body=1" for 41.140.229.124 at 2013-10-23 17:34:52 +0000
+
+
+Started GET "/assets/line_items.js?body=1" for 41.140.229.124 at 2013-10-23 17:34:52 +0000
+
+
+Started GET "/assets/carts.js?body=1" for 41.140.229.124 at 2013-10-23 17:34:52 +0000
+
+
+Started GET "/assets/orders.js?body=1" for 41.140.229.124 at 2013-10-23 17:34:52 +0000
+
+
+Started GET "/assets/products.js?body=1" for 41.140.229.124 at 2013-10-23 17:34:52 +0000
+
+
+Started GET "/assets/session.js?body=1" for 41.140.229.124 at 2013-10-23 17:34:52 +0000
+
+
+Started GET "/assets/store.js?body=1" for 41.140.229.124 at 2013-10-23 17:34:52 +0000
+
+
+Started GET "/assets/users.js?body=1" for 41.140.229.124 at 2013-10-23 17:34:52 +0000
+
+
+Started GET "/assets/application.js?body=1" for 41.140.229.124 at 2013-10-23 17:34:52 +0000
+
+
+Started GET "/assets/logo.png" for 41.140.229.124 at 2013-10-23 17:34:53 +0000
+
+
+Started GET "/" for 196.217.16.199 at 2013-10-24 14:15:27 +0000
+Processing by StoreController#index as HTML
+  [1m[35mCart Load (0.2ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1  [["id", 49]]
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY "products".title ASC[0m
+  Rendered store/index.html.erb within layouts/application (73.2ms)
+  [1m[35mLineItem Exists (0.2ms)[0m  SELECT 1 AS one FROM "line_items" WHERE "line_items"."cart_id" = ? LIMIT 1  [["cart_id", 49]]
+  [1m[36mLineItem Load (0.2ms)[0m  [1mSELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = ?[0m  [["cart_id", 49]]
+  Rendered collection (0.0ms)
+  Rendered carts/_cart.html.erb (3.0ms)
+Completed 200 OK in 127ms (Views: 96.0ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 196.217.16.199 at 2013-10-24 14:15:28 +0000
+
+
+Started GET "/assets/admin.css?body=1" for 196.217.16.199 at 2013-10-24 14:15:28 +0000
+
+
+Started GET "/assets/carts.css?body=1" for 196.217.16.199 at 2013-10-24 14:15:28 +0000
+
+
+Started GET "/assets/line_items.css?body=1" for 196.217.16.199 at 2013-10-24 14:15:28 +0000
+
+
+Started GET "/assets/orders.css?body=1" for 196.217.16.199 at 2013-10-24 14:15:28 +0000
+
+
+Started GET "/assets/products.css?body=1" for 196.217.16.199 at 2013-10-24 14:15:28 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 196.217.16.199 at 2013-10-24 14:15:28 +0000
+
+
+Started GET "/assets/session.css?body=1" for 196.217.16.199 at 2013-10-24 14:15:28 +0000
+
+
+Started GET "/assets/store.css?body=1" for 196.217.16.199 at 2013-10-24 14:15:28 +0000
+
+
+Started GET "/assets/users.css?body=1" for 196.217.16.199 at 2013-10-24 14:15:28 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 196.217.16.199 at 2013-10-24 14:15:29 +0000
+
+
+Started GET "/assets/jquery.ui.effect.js?body=1" for 196.217.16.199 at 2013-10-24 14:15:29 +0000
+
+
+Started GET "/assets/jquery.ui.effect-blind.js?body=1" for 196.217.16.199 at 2013-10-24 14:15:29 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 196.217.16.199 at 2013-10-24 14:15:29 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 196.217.16.199 at 2013-10-24 14:15:29 +0000
+
+
+Started GET "/assets/admin.js?body=1" for 196.217.16.199 at 2013-10-24 14:15:29 +0000
+
+
+Started GET "/assets/carts.js?body=1" for 196.217.16.199 at 2013-10-24 14:15:29 +0000
+
+
+Started GET "/assets/line_items.js?body=1" for 196.217.16.199 at 2013-10-24 14:15:29 +0000
+
+
+Started GET "/assets/orders.js?body=1" for 196.217.16.199 at 2013-10-24 14:15:29 +0000
+
+
+Started GET "/assets/products.js?body=1" for 196.217.16.199 at 2013-10-24 14:15:29 +0000
+
+
+Started GET "/assets/session.js?body=1" for 196.217.16.199 at 2013-10-24 14:15:29 +0000
+
+
+Started GET "/assets/store.js?body=1" for 196.217.16.199 at 2013-10-24 14:15:29 +0000
+
+
+Started GET "/assets/users.js?body=1" for 196.217.16.199 at 2013-10-24 14:15:30 +0000
+
+
+Started GET "/assets/application.js?body=1" for 196.217.16.199 at 2013-10-24 14:15:30 +0000
+
+
+Started GET "/assets/logo.png" for 196.217.16.199 at 2013-10-24 14:15:30 +0000
+
+
+Started GET "/assets/cs.jpg" for 196.217.16.199 at 2013-10-24 14:15:30 +0000
+
+
+Started GET "/assets/ruby.jpg" for 196.217.16.199 at 2013-10-24 14:15:30 +0000
+
+
+Started GET "/assets/rtp.jpg" for 196.217.16.199 at 2013-10-24 14:15:30 +0000
+
+
+Started POST "/en" for 196.217.16.199 at 2013-10-24 14:15:37 +0000
+Processing by StoreController#index as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TR2SVXwkENdNrzlkAQu/rn2gn4v5MSdHZfDtWBACO6Q=", "set_locale"=>"ar", "locale"=>"en"}
+  [1m[35mCart Load (0.2ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1  [["id", 49]]
+Redirected to http://makaveli244-ruby-25166.use1.actionbox.io:3000/ar
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/ar" for 196.217.16.199 at 2013-10-24 14:15:38 +0000
+Processing by StoreController#index as HTML
+  Parameters: {"locale"=>"ar"}
+  [1m[36mCart Load (0.2ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1[0m  [["id", 49]]
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" ORDER BY "products".title ASC
+  Rendered store/index.html.erb within layouts/application (4.3ms)
+  [1m[36mLineItem Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "line_items" WHERE "line_items"."cart_id" = ? LIMIT 1[0m  [["cart_id", 49]]
+  [1m[35mLineItem Load (0.1ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = ?  [["cart_id", 49]]
+  Rendered collection (0.0ms)
+  Rendered carts/_cart.html.erb (1.9ms)
+Completed 200 OK in 23ms (Views: 20.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/admin.css?body=1" for 196.217.16.199 at 2013-10-24 14:15:39 +0000
+
+
+Started GET "/assets/carts.css?body=1" for 196.217.16.199 at 2013-10-24 14:15:39 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 196.217.16.199 at 2013-10-24 14:15:39 +0000
+
+
+Started GET "/assets/line_items.css?body=1" for 196.217.16.199 at 2013-10-24 14:15:39 +0000
+
+
+Started GET "/assets/products.css?body=1" for 196.217.16.199 at 2013-10-24 14:15:39 +0000
+
+
+Started GET "/assets/orders.css?body=1" for 196.217.16.199 at 2013-10-24 14:15:39 +0000
+
+
+Started GET "/assets/session.css?body=1" for 196.217.16.199 at 2013-10-24 14:15:39 +0000
+
+
+Started GET "/assets/store.css?body=1" for 196.217.16.199 at 2013-10-24 14:15:39 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 196.217.16.199 at 2013-10-24 14:15:40 +0000
+
+
+Started GET "/assets/jquery.ui.effect.js?body=1" for 196.217.16.199 at 2013-10-24 14:15:40 +0000
+
+
+Started GET "/assets/users.css?body=1" for 196.217.16.199 at 2013-10-24 14:15:40 +0000
+
+
+Started GET "/assets/jquery.ui.effect-blind.js?body=1" for 196.217.16.199 at 2013-10-24 14:15:40 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 196.217.16.199 at 2013-10-24 14:15:40 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 196.217.16.199 at 2013-10-24 14:15:40 +0000
